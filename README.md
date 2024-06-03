@@ -46,7 +46,7 @@ Reddlite is built using the following technologies:
 
 ## Repository
 
-The Reddlite repository can be found on GitHub: https://github.com/vikraj01/reddlite. The repository contains the source code for the app and its documentation.
+The Reddlite repository can be found on GitHub: https://github.com/vikraj66/reddlite. The repository contains the source code for the app and its documentation.
 
 ## Contributions
 
