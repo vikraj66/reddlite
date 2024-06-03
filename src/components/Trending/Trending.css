@@ -1,0 +1,125 @@
+.trending-section {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 20px;
+    width: 60%;
+}
+
+.trending-title p {
+    margin-bottom: 5px;
+}
+
+.trendings {
+    display: flex;
+    position: relative;
+    gap: 1rem;
+    width: 100%;
+}
+
+.trending {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 20px 10px;
+    margin: 5px;
+    border-radius: 8px;
+    position: sticky;
+    width: 248px;
+    height: 140px;
+    justify-content: flex-end;
+    color: #fff !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-sizing: content-box;
+}
+
+.trending>p {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    margin-bottom: 1rem;
+    overflow-wrap: break-word;
+}
+
+.trending>h3 {
+    font-size: 14px;
+    margin: 0px !important;
+}
+
+.trending>p {
+    font-size: 12px;
+}
+
+.trending>a {
+    font-size: 5px;
+}
+
+.trend {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.trend>a {
+    font-weight: 300;
+    font-size: 14px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.trending-skeleton {
+    animation: skeleton-loading 1s linear infinite alternate;
+    width: 90%;
+    height: 180px;
+    border-radius: 8px;
+}
+
+@keyframes skeleton-loading {
+    0% {
+        background-color: hsl(200, 20%, 70%);
+    }
+
+    100% {
+        background-color: hsl(200, 20%, 95%);
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .trending-skeleton {
+        margin: 4px;
+    }
+
+    .trending-skeleton:last-child {
+        margin-right: 0;
+    }
+
+    .trending-skeleton:first-child {
+        margin-left: 0;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    .trending-skeleton {
+        width: 48%;
+    }
+    
+    .trending-skeleton:last-child {
+        margin-right: 4px;
+    }
+
+    .trending-skeleton:first-child {
+        margin-left: 4px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .trending-skeleton {
+        width: 90%;
+    }
+    
+}

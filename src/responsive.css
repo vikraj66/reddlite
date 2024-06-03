@@ -1,0 +1,234 @@
+@media screen and (max-width: 1600px) {
+    .trendings {
+        gap: 0;
+    }
+
+    .best-communities-container {
+        width: auto;
+        min-width: 270px;
+    }
+
+    .postAndCommunity {
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .trending-section, .body-content {
+        width: 80%;
+    }   
+
+    .nav-bar {
+        gap: 4rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .desktop-bar {
+        display: none;
+    }
+
+    .modal-head {
+        position: relative !important;
+        margin: 10px !important;
+        top: auto;
+        left: auto !important;
+        justify-content: flex-start !important;
+    }
+
+    .trendings {
+        flex-wrap: wrap;
+    }
+
+    .trending{
+        width: 45%;
+    }
+
+    .postAndCommunity {
+        flex-direction: column;
+    }
+
+    .best-communities-container {
+        display: none;
+    }
+
+    .mobile-search {
+        display: flex;
+    }
+
+    .modal-body {
+        margin: 0 !important;
+    }
+
+    .modal-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 90% !important;
+    }
+
+    .modal-content, .modal-body, .posts-content-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-post {
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .trending-section, .body-content {
+        width: 94%;
+    }
+
+    .trendings {
+        width: 100%;
+        margin-right: 0;
+    }
+
+
+
+    .image-content, .text-only, .post-preview-left {
+        width: 78%;
+    }
+
+}
+
+@media screen and (max-width: 660px) {
+    .trending{
+        width: 80%;
+    }
+    .trending-section, .trendings, .body-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-content, .text-only {
+        width: 58%;
+    }
+
+    .post-preview-stats {
+        flex-direction: column;
+    }
+
+    .post-preview-two-col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .voteSection {
+        display: none;
+    }
+
+    .postContent {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .postBody {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .commentsBlock {
+        margin-top: 1rem;
+    }
+
+    .app-body {
+        flex-wrap: nowrap;
+    }
+
+    .search-bar {
+        width: 90%;
+    }
+
+    .all-search-results {
+        width: 90%;
+    }
+
+    .search-results-container {
+        width: 80%;
+    }
+
+    .day-mode, .night-mode {
+        width: 1rem;
+    }
+
+    .theme-toggle{
+        width: 4rem;
+    }
+
+    #dark .day-mode {
+        display: none;
+    }
+
+    #light .night-mode {
+        display: none;
+    }
+
+    .modal-content {
+        width: 94%;
+    }
+
+    .comment-head {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.1rem !important;
+        margin-bottom: 2rem;
+
+    }
+    .popularPosts {
+        flex: 100%;
+        width: 98%;
+        margin: 0 auto;
+    }
+    .modal-body, .main-post {
+        padding: 0 1rem;
+        width: 98%;
+    }
+    .modal-content, .modal-body {
+        justify-content: flex-start;
+    }
+
+    .main-post {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-post {
+        text-align: center;
+    }
+    .image-content, .text-only{
+        width: 94% !important;
+    }
+    .text-only {
+        align-items: center;
+        text-align: center;
+    }
+
+    .post-preview-left {
+        text-align: center !important;
+        width: 98%;
+    } 
+
+    .photo-section {
+        width: 98%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .disabled-button {
+        display: none;
+    }
+}

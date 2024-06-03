@@ -1,0 +1,60 @@
+* {
+    transition: background-color 0.2s;
+}
+
+:root {
+    --primary-color: #1484D6;
+    --light-color: #000;
+    --dark-color: #fff;
+    --light-bg: #fff;
+    --dark-bg: #212121;
+    --boxes-light-bg: #F6F7F8;
+    --boxes-dark-bg: #424242;
+    --light-outline: #EDEFF1;
+    --dark-outline: #878787;
+    --body-light-bg: #DAE0E6;
+    --body-dark-bg: #444;
+    --btn-inactive: #878A8C;
+    --light-interact-gray: #878A8C;
+}
+
+#light {
+    background-color: var(--light-bg) !important;
+}
+
+#dark {
+    background-color: var(--dark-bg) !important;
+    color: #fff !important;
+}
+
+.app-body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 84px;
+}
+
+#light .app-body {
+    background-color: var(--body-light-bg) !important;
+}
+
+#dark .app-body {
+    background-color: var(--body-dark-bg) !important;
+}
+
+.postIcon{
+    display: flex;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+}
+
+.body-content {
+    width: 60%;
+}
+
+.mobile-search {
+    display: none;
+    margin-top: 2rem;
+}

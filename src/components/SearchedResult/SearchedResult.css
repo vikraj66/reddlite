@@ -1,0 +1,137 @@
+.all-search-results {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+    height: 50vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 402px;
+    z-index: 10;
+}
+
+.all-search-results::-webkit-scrollbar {
+	width: 10px;
+	background-color: var(--light-outline);
+}
+
+.all-search-results::-webkit-scrollbar-thumb {
+	background-color: #1484D6;
+}
+
+#light .all-search-results {
+    background-color: var(--light-bg);
+    border: var(--light-outline) 1px solid;
+}
+
+#dark .all-search-results {
+    background-color: var(--dark-bg);
+    border: var(--dark-outline) 1px solid;
+}
+
+.search-result {
+    display: flex;
+    padding: 1rem 0;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.8rem;
+    cursor: pointer;
+}
+
+.search-result img {
+    width: 40px;
+    border-radius: 100%;
+}
+
+.search-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.search-category {
+    display: flex;
+    gap: 0.4rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle-divider {
+    font-size: 0.4rem;
+}
+
+.search-results-container {
+    padding: 0 2rem;
+    width: 325px;
+}
+
+.all-search-results h4 {
+    font-weight: 400;
+}
+
+.content-skeleton {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+}
+
+.img-skeleton {
+    animation: skeleton-loading 1s linear infinite alternate;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+.text-skeleton {
+    animation: skeleton-loading 1s linear infinite alternate;
+    width: 14rem;
+    height: 14px;
+}
+
+.category-skeleton {
+    animation: skeleton-loading 1s linear infinite alternate;
+    width: 8rem;
+    height: 14px;
+}
+
+@keyframes skeleton-loading {
+    0% {
+        background-color: hsl(200, 20%, 70%);
+    }
+
+    100% {
+        background-color: hsl(200, 20%, 95%);
+    }
+}
+
+.search-hint {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #BABABA !important;
+}
+
+.hint-icon {
+    font-size: 2rem;
+    animation: updown 1.8s infinite;
+}
+
+/* Icon animation */
+
+@keyframes updown {
+    0% {
+      transform: translateY(-10%);
+    }
+  
+    25% {
+      transform: translateY(10%);
+    }
+  
+    100% {
+      transform: translateY(-10%);
+    }
+  }

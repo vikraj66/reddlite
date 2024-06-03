@@ -1,0 +1,71 @@
+#light .popularFilter{
+    background-color: var(--light-bg);
+    border: var(--light-outline) 1px solid;
+}
+
+#dark .popularFilter {
+    background-color: var(--dark-bg);
+    border: var(--dark-outline) 1px solid;
+  }
+
+
+.popularFilter{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 1px !important;
+    height: 54px;
+}
+
+.popularFilter select, 
+.popularFilter div{
+    height: 27px;
+    font-size: 12px;
+    font-weight: 700;
+    width: 96px;
+    border-radius: 13.5px;
+    cursor: pointer;
+}
+
+.hoverFilter{
+    display: flex;
+    justify-content: center;
+}
+
+.hoverFilter:hover{
+    border: 1px solid var(--btn-inactive)!important;
+}
+
+/* PopularFilter select */
+.popularFilter select{
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.popular {
+    border: 1px solid transparent !important;
+}
+
+#light .popularFilter select{
+    border: var(--light-outline) 1px solid;
+}
+
+#dark .popularFilter select{
+    background-color: var(--dark-bg);
+    border: var(--dark-outline) 1px solid;
+}
+
+/* Popular Filter all divs */
+.popularFilter div{
+    color: var(--btn-inactive);
+    display: flex;
+    align-items: center;
+}
+
+.popularFilter div h4{
+    margin-left: 0.5rem;
+}
+
+.disabled-button {
+    cursor: not-allowed !important;
+}

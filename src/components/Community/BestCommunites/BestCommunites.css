@@ -1,0 +1,92 @@
+#light .best-communities-container {
+  background-color: var(--light-bg);
+  border: var(--light-outline) 1px solid;
+}
+
+#dark .best-communities-container {
+  background-color: var(--dark-bg);
+  border: var(--dark-outline) 1px solid;
+}
+
+.best-communities-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  padding: 0 20px;
+  margin: auto;
+  min-width: 300px;
+  border: 1px solid var(--light-outline);
+  border-radius: 3px 3px 0px 0px;
+  margin-bottom: 0;
+}
+
+.best-communities-heading {
+  padding: 24px;
+}
+.subreddit {
+  display: flex;
+  justify-content: space-between;
+  flex: 0.3;
+  align-items: center;
+  margin-left: 12px;
+}
+
+.best-community-wrapper:nth-child(6) {
+  border-bottom: 1px solid var(--light-outline);
+}
+
+.best-community-wrapper {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--light-outline);
+  padding: 17px 17px;
+  width: 100%;
+  align-items: center;
+}
+.best-community {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.eclipse {
+  width: 26px;
+  height: 26px;
+  background-color: var(--light-outline);
+  border-radius: 16px;
+  margin-right: 5px;
+}
+
+.button-wrapper {
+  padding: 20px;
+}
+
+.btn {
+  background: var(--primary-color);
+  border-radius: 15px;
+  outline: none;
+  border: none;
+  width: 51px;
+  height: 30px;
+  color: #fff;
+}
+
+.right-arrow {
+  font-size: 1.4rem;
+  margin-top: 3px;
+}
+
+.btn:hover {
+  background-color: hsl(205, 83%, 26%);
+  cursor: pointer;
+}
+
+.index {
+  padding-right: 16px;
+}
+
+.best-community img {
+  width: 26px;
+  border-radius: 4rem;
+}
